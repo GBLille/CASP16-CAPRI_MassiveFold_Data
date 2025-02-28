@@ -52,6 +52,3 @@ The 8040 predictions were generated with the 8 following sets of parameters, 100
 |      cf_dropout_full_woTemplates      |          X          |             X              |             |     21     |          ColabFold           |
 
 
-## Monomeric targets
-
-## Multimeric targets
