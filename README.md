@@ -10,10 +10,11 @@
   * [CASP Multimeric MassiveFold PDBs only](#casp-multimeric-massivefold-pdbs-only)
   * [CAPRI MassiveFold scoring data](#capri-massivefold-scoring-data)
 * [Decompress data](#decompress-data)
+* [Rankings download](#rankings-download)
 <!-- TOC -->
 
-MassiveFold data generated for the CASP16-CAPRI experiment and provided to all predictors for phase 2. All data are available for download 
-[here](https://entrepot.recherche.data.gouv.fr/dataverse/casp16mf).
+MassiveFold data generated for the CASP16-CAPRI experiment and provided to all predictors for phase 2. All data are available 
+for download on the french Recherche Data Gouv repository [here](https://entrepot.recherche.data.gouv.fr/dataverse/casp16mf).
 
 All targets are described on the CASP (Critical Assessment of Techniques for Protein Structure Prediction) website 
 (https://predictioncenter.org/) and were generated with the collaboration of CAPRI (Critical Assessment of PRediction of Interactions)
@@ -82,6 +83,9 @@ predictions for each **multimeric** target
 
 They rely on the csv files also located in the folder, which contain all the direct download links. The content of each 
 csv is also listed below.
+
+***N.B***: in case of error downloading a file, remove this file and run the script again; it will only download the 
+missing files.
 
 ### CASP Monomeric MassiveFold full data
 
@@ -294,3 +298,16 @@ For instance:
 pigz -d -c H1202_T238_MassiveFold.tar.gz | tar -xvf -
 ```
 The CAPRI scoring gz files can be uncompressed with `gunzip`.
+
+## Rankings download
+
+Each tar.gz archive contains a `ranking.csv` file with AlphaFold2 scores. The most complete ones are those included 
+in the `only_pdbs` tar.gz archives. They contain:
+- for monomers: the set of parameters used (condition), the model name, the AlphaFold2 confidence score, which is the 
+mean plddts and ranking using the mean plddts
+- for multimers: the set of parameters used (condition), the model name, the iptm value, the ptm value, the AlphaFold2 
+confidence score which is 0.8\*iptm+0.2\*ptm and ranking using this score
+
+For convenience, we provide here two archives which gather the `ranking.csv` files for all the targets:
+- For monomers: [ranking_casp_massivefold_monomers.tar.gz](./ranking_casp_massivefold_monomers.tar.gz)
+- For multimers: [ranking_casp_massivefold_multimers.tar.gz](./ranking_casp_massivefold_multimers.tar.gz)
