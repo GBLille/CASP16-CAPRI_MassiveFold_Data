@@ -1,5 +1,17 @@
 # CASP16-CAPRI MassiveFold Data
 
+<!-- TOC -->
+* [CASP16 MassiveFold abstract](#casp16-massivefold-abstract)
+* [Sets of parameters used](#sets-of-parameters-used)
+* [Dataset download](#dataset-download)
+  * [CASP Monomeric MassiveFold full data](#casp-monomeric-massivefold-full-data)
+  * [CASP Multimeric MassiveFold full data](#casp-multimeric-massivefold-full-data)
+  * [CASP Monomeric MassiveFold PDBs only](#casp-monomeric-massivefold-pdbs-only)
+  * [CASP Multimeric MassiveFold PDBs only](#casp-multimeric-massivefold-pdbs-only)
+  * [CAPRI MassiveFold scoring data](#capri-massivefold-scoring-data)
+* [Decompress data](#decompress-data)
+<!-- TOC -->
+
 MassiveFold data generated for the CASP16-CAPRI experiment and provided to all predictors for phase 2. All data are available for download 
 [here](https://entrepot.recherche.data.gouv.fr/dataverse/casp16mf).
 
@@ -69,7 +81,7 @@ predictions for each **multimeric** target
 - `download_all_capri_massivefold_scoring.py` downloads all the CAPRI scoring files for MassiveFold data of each target
 
 They rely on the csv files also located in the folder, which contain all the direct download links. The content of each 
-csv is also listed here.
+csv is also listed below.
 
 ### CASP Monomeric MassiveFold full data
 
@@ -274,5 +286,11 @@ csv is also listed here.
 | T302_CAPRI_scoring.pdb.gz | [https://entrepot.recherche.data.gouv.fr/api/access/datafile/:persistentId?persistentId=doi:10.57745/LTTMCN](https://entrepot.recherche.data.gouv.fr/api/access/datafile/:persistentId?persistentId=doi:10.57745/LTTMCN) |
 | T309_CAPRI_scoring.pdb.gz | [https://entrepot.recherche.data.gouv.fr/api/access/datafile/617846](https://entrepot.recherche.data.gouv.fr/api/access/datafile/617846) |
 
+## Decompress data
 
-
+Because the tar.gz files are very large, we recommend to use the `pigz` tool, to benefit from multicore decompression. 
+For instance:
+```
+pigz -d -c H1202_T238_MassiveFold.tar.gz | tar -xvf -
+```
+The CAPRI scoring gz files can be uncompressed with `gunzip`.
