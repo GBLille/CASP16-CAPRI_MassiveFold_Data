@@ -64,7 +64,7 @@ The 8040 predictions were generated with the 8 following sets of parameters, 100
 |            cf_woTemplates             |                     |                            |             |     21     |          ColabFold           |
 |      cf_dropout_full_woTemplates      |          X          |             X              |             |     21     |          ColabFold           |
 
-## Dataset download
+## Datasets download
 
 Data for individual targets can be downloaded [here](https://entrepot.recherche.data.gouv.fr/dataverse/casp16mf). 
 
@@ -311,3 +311,20 @@ confidence score which is 0.8\*iptm+0.2\*ptm and ranking using this score
 For convenience, we provide here two archives which gather the `ranking.csv` files for all the targets:
 - For monomers: [ranking_casp_massivefold_monomers.tar.gz](./ranking_casp_massivefold_monomers.tar.gz)
 - For multimers: [ranking_casp_massivefold_multimers.tar.gz](./ranking_casp_massivefold_multimers.tar.gz)
+
+## Assessments download
+
+Data for individual targets can be downloaded [here](https://entrepot.recherche.data.gouv.fr/dataverse/casp16mf). 
+
+But he CASP and CAPRI assessment files can be downloaded here:he main files can be downloaded using the scripts available in the `dataset_download` folder. These python3 
+scripts can be run directly from the folder to download the data:
+- `download_all_casp_massivefold_monomers.py` downloads all the MassiveFold.tar.gz files which contain all the 
+predictions for each **monomeric** target divided into 8 folders named after the conditions; each one contains predictions 
+as well as pickle files, sequence alignments, rankings and plots.
+- `download_all_casp_massivefold_multimers.py` downloads all the MassiveFold.tar.gz files which contain all the 
+predictions for each **multimeric** target
+- `download_all_casp_massivefold_only_pdbs_monomers.py` downloads only all the PDBs of the MassiveFold set for each 
+**monomeric** target
+- `download_all_casp_massivefold_only_pdbs_multimers.py` downloads only all the PDBs of the MassiveFold set for each 
+**multimeric** target
+- `download_all_capri_massivefold_scoring.py` downloads all the CAPRI scoring files for MassiveFold data of each target
