@@ -304,14 +304,14 @@ The CAPRI scoring gz files can be uncompressed with `gunzip`.
 
 Each tar.gz archive contains a `ranking.csv` file with AlphaFold2 scores. The most complete ones are those included 
 in the `only_pdbs` tar.gz archives. They contain:
-- for monomers: the set of parameters used (condition), the model name, the AlphaFold2 confidence score, which is the 
-mean plddts and ranking using the mean plddts
-- for multimers: the set of parameters used (condition), the model name, the iptm value, the ptm value, the AlphaFold2 
-confidence score which is 0.8\*iptm+0.2\*ptm and ranking using this score
+- for monomers: the set of parameters used (condition), the model name, the pdb file name, the ptm value, the AlphaFold2 
+confidence score, which is the mean plddts and ranking using the mean plddts
+- for multimers: the set of parameters used (condition), the model name, the pdb filename, the iptm value, the ptm value, 
+the AlphaFold2 confidence score which is 0.8\*iptm+0.2\*ptm and ranking using this score
 
 For convenience, we provide here two archives which gather the `ranking.csv` files for all the targets:
 - For monomers: [ranking_casp_massivefold_monomers.tar.gz](./ranking_casp_massivefold_monomers.tar.gz)
-- For multimers: [ranking_casp_massivefold_multimers.tar.gz](./ranking_casp_massivefold_multimers.tar.gz)
+- For multimers (including CAPRI targets): [ranking_casp_massivefold_multimers.tar.gz](./ranking_casp_massivefold_multimers.tar.gz)
 
 ## Assessments download
 
