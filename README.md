@@ -12,6 +12,8 @@
 * [Decompress data](#decompress-data)
 * [Rankings download](#rankings-download)
 * [Assessments download](#assessments-download)
+* [Figures of the article](#figures-of-the-article)
+* [Citation](#citation)
 <!-- TOC -->
 
 MassiveFold data generated for the CASP16-CAPRI experiment and provided to all predictors for phase 2. All data are available 
@@ -67,7 +69,7 @@ The 8040 predictions were generated with the 8 following sets of parameters, 100
 
 ## Datasets download
 
-Data for individual targets can be downloaded [here](https://entrepot.recherche.data.gouv.fr/dataverse/casp16mf). 
+Data for individual targets can be downloaded here: https://entrepot.recherche.data.gouv.fr/dataverse/casp16mf 
 
 However, the main files can be downloaded using the scripts available in the `dataset_download` folder. These python3 
 scripts can be run directly from the folder to download the data:
@@ -323,3 +325,17 @@ models generated.
 - assessment from CASP for monomers: [assessment_casp_massivefold_monomers.tar.gz](./assessment_casp_massivefold_monomers.tar.gz)
 - assessment from CASP for multimers: [assessment_casp_massivefold_multimers.tar.gz](./assessment_casp_massivefold_multimers.tar.gz)
 - assessment from CAPRI for multimers only: [assessment_capri_massivefold.tar.gz](./assessment_capri_massivefold.tar.gz)
+
+## Figures of the article
+
+The figures of the article can be reproduced by running the `figures.ipynb` notebook in the `paper` folder. The data used 
+in the notebook are in the `data` subfolder in parquet format ([parquet.apache.org](https://parquet.apache.org/)) and are also accessible in csv format 
+in the `data_csv.zip` archive. 
+
+## Citation
+
+If you use the CASP16-CAPRI MassiveFold data, please cite the preprint:  
+
+**MassiveFold data for CASP16-CAPRI: a systematic massive sampling experiment**  
+Nessim Raouraoua, Marc F. Lensink, Guillaume Brysbaert  
+*bioRxiv* 2025.05.26.653955; doi: https://doi.org/10.1101/2025.05.26.653955
