@@ -16,8 +16,7 @@
 * [Citation](#citation)
 <!-- TOC -->
 
-MassiveFold data generated for the CASP16-CAPRI experiment and provided to all predictors for phase 2. All data are available 
-for download on the french Recherche Data Gouv repository [here](https://entrepot.recherche.data.gouv.fr/dataverse/casp16mf).
+MassiveFold data generated for the CASP16-CAPRI experiment and provided to all predictors for phase 2.
 
 All targets are described on the CASP (Critical Assessment of Techniques for Protein Structure Prediction) website 
 (https://predictioncenter.org/) and were generated with the collaboration of CAPRI (Critical Assessment of PRediction of Interactions)
@@ -36,12 +35,15 @@ CPU for alignments, running automated batches of structure prediction on GPU, an
 in a single output directory, with a consolidated ranking and a variety of plots. MassiveFold uses
 <a href="https://github.com/GBLille/AFmassive" target="_blank">AFmassive</a> inference engine, an updated version of AFsample
 that offers additional diversity parameters for massive sampling. MassiveFold can also use ColabFold.
-We used a large GPU cluster to generate 8040 predictions for the majority of the targets, submitted
+We used a large GPU cluster to generate 8040 predictions for the majority of the <b>monomeric</b> and <b>multimeric</b> targets, submitted
 our top 5 and <b>made the ensemble of predictions available to all predictors for a CASP16 phase 2 prediction
 round</b> where they could use our predictions in any way they wanted to submit an updated top 5.
 </p>
 
 More details available in [MassiveFold_CASP16_Abstract.pdf](MassiveFold_CASP16_Abstract.pdf)
+
+All our data is accessible permanently from the [Research Data Gouv repository](https://entrepot.recherche.data.gouv.fr/dataverse/casp16mf) 
+and can be downloaded directly from there or through the links and scripts provided below.
 
 ## Sets of parameters used
 
