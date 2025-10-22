@@ -338,6 +338,6 @@ in the `data_csv.zip` archive.
 
 If you use the CASP16-CAPRI MassiveFold data, please cite the preprint:  
 
-**MassiveFold data for CASP16-CAPRI: a systematic massive sampling experiment**  
+**MassiveFold Data for CASP16-CAPRI: A Systematic Massive Sampling Experiment**  
 Nessim Raouraoua, Marc F. Lensink, Guillaume Brysbaert  
-*bioRxiv* 2025.05.26.653955; doi: https://doi.org/10.1101/2025.05.26.653955
+*Proteins* 2025 Aug 28. [doi: 10.1002/prot.70040](https://doi.org/10.1002/prot.70040)
