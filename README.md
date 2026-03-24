@@ -328,7 +328,7 @@ models generated.
 - assessment from CASP for multimers: [assessment_casp_massivefold_multimers.tar.gz](./assessment_casp_massivefold_multimers.tar.gz)
 - assessment from CAPRI for multimers only: [assessment_capri_massivefold.tar.gz](./assessment_capri_massivefold.tar.gz)
 
-***N.B.***: The CAPRI assessment files contain an `interface` column that gives the chains involved in the interface. These 
+***N.B.***: The CAPRI assessment files contain a `chains` column that gives the chains involved in the interface. These 
 chains were extracted *a posteriori* from CAPRI generated files and are provided without any warranty.
 
 ## Figures of the article
